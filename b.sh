@@ -1,13 +1,14 @@
-select department in RUN_DEV BE_MIGRATE
+select op in RUN_DEV MIGRATE
 do
-  case $department in
+  case $op in
 
     RUN_DEV)
-        open "http://localhost:8000"
+        source backend/env/bin/activate
         ./backend/manage.py runserver
     ;;
 
-    BE_MIGRATE)
+    MIGRATE)
+        source backend/env/bin/activate
         ./backend/manage.py makemigrations
         ./backend/manage.py migrate
     ;;
