@@ -5,6 +5,9 @@ async function getData() {
     throw new Error('Failed to fetch data')
   }
  
+
+
+  
   return res.json()
 }
 
