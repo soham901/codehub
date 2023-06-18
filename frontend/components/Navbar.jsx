@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Navbar() {
   return (
     <>
-      <div className="dui-navbar ">
+      <div className="dui-navbar backdrop-blur-3xl rounder-lg border-2 border-red-400  ">
         <div className="flex-1">
           <a className="dui-btn dui-btn-ghost normal-case text-xl">CodeHub</a>
         </div>
